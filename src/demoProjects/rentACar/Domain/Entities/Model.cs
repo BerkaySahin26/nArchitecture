@@ -19,13 +19,12 @@ namespace Domain.Entities
         {
         }
 
-        public Model(int id, int brandId ,string name, decimal dailyPrice, string ımageUrl, Brand? brand)
+        public Model(int id, int brandId ,string name, decimal dailyPrice, string ımageUrl):this()
         {
-            BrandId = id;
+            BrandId = brandId;
             Name = name;
             DailyPrice = dailyPrice;
             ImageUrl = ımageUrl;
-            Brand = brand;
             Id = id;
         }
     }
